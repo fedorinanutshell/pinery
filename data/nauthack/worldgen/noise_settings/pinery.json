@@ -1,0 +1,762 @@
+{
+	"sea_level": 0,
+	"disable_mob_generation": true,
+	"noise_caves_enabled": false,
+	"noodle_caves_enabled": false,
+	"aquifers_enabled": false,
+	"ore_veins_enabled": true,
+	"legacy_random_source": false,
+	"default_block": {
+		"Name": "minecraft:stone"
+	},
+	"default_fluid": {
+		"Name": "minecraft:water",
+		"Properties": {
+			"level": "0"
+		}
+	},
+	"noise": {
+		"min_y": -256,
+		"height": 512,
+		"size_horizontal": 1,
+		"size_vertical": 2,
+		"island_noise_override": false,
+		"sampling": {
+			"xz_scale": 0.9999999814507745,
+			"y_scale": 0.9999999814507745,
+			"xz_factor": 80,
+			"y_factor": 160
+		},
+		"bottom_slide": {
+			"target": 1,
+			"size": 8,
+			"offset": 8
+		},
+		"top_slide": {
+			"target": 0,
+			"size": 0,
+			"offset": 0
+		},
+		"terrain_shaper": {
+			"offset": {
+				"coordinate": "continents",
+				"points": [
+					{
+						"location": -0.9,
+						"derivative": 0,
+						"value": -0.9
+					},
+					{
+						"location": -0.25,
+						"derivative": 0,
+						"value": -0.6
+					},
+					{
+						"location": 0,
+						"derivative": 0,
+						"value": -0.5
+					},
+					{
+						"location": 0.25,
+						"derivative": 0,
+						"value": {
+							"coordinate": "weirdness",
+							"points": [
+								{
+									"location": -0.1,
+									"derivative": 0,
+									"value": -0.3
+								},
+								{
+									"location": 0,
+									"derivative": 0,
+									"value": -1
+								},
+								{
+									"location": 0.1,
+									"derivative": 0,
+									"value": -0.3
+								}
+							]
+						}
+					},
+					{
+						"location": 0.4,
+						"derivative": 0,
+						"value": {
+							"coordinate": "weirdness",
+							"points": [
+								{
+									"location": -0.1,
+									"derivative": 0,
+									"value": -0.2
+								},
+								{
+									"location": 0,
+									"derivative": 0,
+									"value": -0.75
+								},
+								{
+									"location": 0.1,
+									"derivative": 0,
+									"value": -0.2
+								}
+							]
+						}
+					},
+					{
+						"location": 0.6,
+						"derivative": 0,
+						"value": {
+							"coordinate": "weirdness",
+							"points": [
+								{
+									"location": -0.1,
+									"derivative": 0,
+									"value": {
+										"coordinate": "continents",
+										"points": [
+											{
+												"location": 0.3,
+												"derivative": 0,
+												"value": 0.2
+											},
+											{
+												"location": 0.6,
+												"derivative": 0,
+												"value": {
+													"coordinate": "ridges",
+													"points": [
+														{
+															"location": -0.5,
+															"derivative": 0,
+															"value": 0.4
+														},
+														{
+															"location": 0.5,
+															"derivative": 0,
+															"value": {
+																"coordinate": "erosion",
+																"points": [
+																	{
+																		"location": -0.5,
+																		"derivative": 0,
+																		"value": 0.45
+																	},
+																	{
+																		"location": 0.5,
+																		"derivative": 0,
+																		"value": 0.6
+																	}
+																]
+															}
+														}
+													]
+												}
+											},
+											{
+												"location": 0.9,
+												"derivative": 0,
+												"value": {
+													"coordinate": "ridges",
+													"points": [
+														{
+															"location": -0.5,
+															"derivative": 0,
+															"value": 0.75
+														},
+														{
+															"location": 0.5,
+															"derivative": 0,
+															"value": {
+																"coordinate": "erosion",
+																"points": [
+																	{
+																		"location": -0.5,
+																		"derivative": 0,
+																		"value": 0.85
+																	},
+																	{
+																		"location": 0.5,
+																		"derivative": 0,
+																		"value": 1.25
+																	}
+																]
+															}
+														}
+													]
+												}
+											}
+										]
+									}
+								},
+								{
+									"location": 0,
+									"derivative": 0,
+									"value": -0.75
+								},
+								{
+									"location": 0.1,
+									"derivative": 0,
+									"value": {
+										"coordinate": "continents",
+										"points": [
+											{
+												"location": 0.3,
+												"derivative": 0,
+												"value": 0.2
+											},
+											{
+												"location": 0.6,
+												"derivative": 0,
+												"value": {
+													"coordinate": "ridges",
+													"points": [
+														{
+															"location": -0.5,
+															"derivative": 0,
+															"value": 0.4
+														},
+														{
+															"location": 0.5,
+															"derivative": 0,
+															"value": {
+																"coordinate": "erosion",
+																"points": [
+																	{
+																		"location": -0.5,
+																		"derivative": 0,
+																		"value": 0.45
+																	},
+																	{
+																		"location": 0.5,
+																		"derivative": 0,
+																		"value": 0.6
+																	}
+																]
+															}
+														}
+													]
+												}
+											},
+											{
+												"location": 0.9,
+												"derivative": 0,
+												"value": {
+													"coordinate": "ridges",
+													"points": [
+														{
+															"location": -0.5,
+															"derivative": 0,
+															"value": 0.75
+														},
+														{
+															"location": 0.5,
+															"derivative": 0,
+															"value": {
+																"coordinate": "erosion",
+																"points": [
+																	{
+																		"location": -0.5,
+																		"derivative": 0,
+																		"value": 0.85
+																	},
+																	{
+																		"location": 0.5,
+																		"derivative": 0,
+																		"value": 1.25
+																	}
+																]
+															}
+														}
+													]
+												}
+											}
+										]
+									}
+								}
+							]
+						}
+					}
+				]
+			},
+			"factor": {
+				"coordinate": "weirdness",
+				"points": [
+					{
+						"location": -0.5,
+						"derivative": 0,
+						"value": 1
+					},
+					{
+						"location": -0.1,
+						"derivative": 0,
+						"value": 3
+					},
+					{
+						"location": 0,
+						"derivative": 0,
+						"value": 5
+					},
+					{
+						"location": 0.1,
+						"derivative": 0,
+						"value": 3
+					},
+					{
+						"location": 0.5,
+						"derivative": 0,
+						"value": 1.5
+					}
+				]
+			},
+			"jaggedness": {
+				"coordinate": "continents",
+				"points": [
+					{
+						"location": -0.75,
+						"derivative": 0,
+						"value": 0.05
+					},
+					{
+						"location": -0.25,
+						"derivative": 0,
+						"value": 0.03
+					},
+					{
+						"location": 0.25,
+						"derivative": 0,
+						"value": 0
+					},
+					{
+						"location": 0.75,
+						"derivative": 0,
+						"value": {
+							"coordinate": "erosion",
+							"points": [
+								{
+									"location": -0.75,
+									"derivative": 0,
+									"value": 0
+								},
+								{
+									"location": 0,
+									"derivative": 0,
+									"value": 0.05
+								},
+								{
+									"location": 0.75,
+									"derivative": 0,
+									"value": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	},
+	"surface_rule": {
+		"type": "minecraft:sequence",
+		"sequence": [
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:vertical_gradient",
+					"random_name": "nauthack:bedrock",
+					"true_at_and_below": {
+						"absolute": -256
+					},
+					"false_at_and_above": {
+						"absolute": -248
+					}
+				},
+				"then_run": {
+					"type": "minecraft:block",
+					"result_state": {
+						"Name": "minecraft:bedrock"
+					}
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:stone_depth",
+					"offset": 0,
+					"surface_type": "floor",
+					"add_surface_depth": true,
+					"add_surface_secondary_depth": false
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "floor",
+								"add_surface_depth": false,
+								"add_surface_secondary_depth": false
+							},
+							"then_run": {
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:vertical_gradient",
+									"random_name": "nauthack:grass/up",
+									"true_at_and_below": {
+										"absolute": 128
+									},
+									"false_at_and_above": {
+										"absolute": 192
+									}
+								},
+								"then_run": {
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:not",
+										"invert": {
+											"type": "minecraft:vertical_gradient",
+											"random_name": "nauthack:grass/down",
+											"true_at_and_below": {
+												"absolute": 0
+											},
+											"false_at_and_above": {
+												"absolute": 8
+											}
+										}
+									},
+									"then_run": {
+										"type": "minecraft:sequence",
+										"sequence": [
+											{
+												"type": "minecraft:condition",
+												"if_true": {
+													"type": "minecraft:not",
+													"invert": {
+														"type": "minecraft:vertical_gradient",
+														"random_name": "nauthack:podzol",
+														"true_at_and_below": {
+															"absolute": 64
+														},
+														"false_at_and_above": {
+															"absolute": 128
+														}
+													}
+												},
+												"then_run": {
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "minecraft:podzol",
+														"Properties": {
+															"snowy": "false"
+														}
+													}
+												}
+											},
+											{
+												"type": "minecraft:block",
+												"result_state": {
+													"Name": "minecraft:grass_block",
+													"Properties": {
+														"snowy": "false"
+													}
+												}
+											}
+										]
+									}
+								}
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:not",
+								"invert": {
+									"type": "minecraft:vertical_gradient",
+									"random_name": "nauthack:dirtfloor/down",
+									"true_at_and_below": {
+										"absolute": -16
+									},
+									"false_at_and_above": {
+										"absolute": 16
+									}
+								}
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:vertical_gradient",
+											"random_name": "nauthack:dirtfloor/up",
+											"true_at_and_below": {
+												"absolute": 128
+											},
+											"false_at_and_above": {
+												"absolute": 192
+											}
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "minecraft:dirt"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:biome",
+											"biome_is": [
+												"nauthack:pinery/frozenriver",
+												"nauthack:pinery/tundra",
+												"nauthack:pinery/icepeaks",
+												"nauthack:pinery/mountain"
+											]
+										},
+										"then_run": {
+											"type": "minecraft:sequence",
+											"sequence": [
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "minecraft:surface",
+														"min_threshold": -0.05,
+														"max_threshold": 0.05
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "minecraft:blue_ice"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "minecraft:surface",
+														"min_threshold": -1,
+														"max_threshold": -0.75
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "minecraft:blue_ice"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "minecraft:surface",
+														"min_threshold": 0.5,
+														"max_threshold": 0.75
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "minecraft:blue_ice"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "minecraft:surface",
+														"min_threshold": -0.75,
+														"max_threshold": -0.5
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "minecraft:packed_ice"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "minecraft:surface",
+														"min_threshold": 0.05,
+														"max_threshold": 0.5
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "minecraft:packed_ice"
+														}
+													}
+												},
+												{
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "minecraft:ice"
+													}
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:not",
+								"invert": {
+									"type": "minecraft:y_above",
+									"anchor": {
+										"absolute": 128
+									},
+									"surface_depth_multiplier": 0,
+									"add_stone_depth": false
+								}
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "minecraft:sand"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:stone_depth",
+					"offset": 0,
+					"surface_type": "ceiling",
+					"add_surface_depth": true,
+					"add_surface_secondary_depth": false
+				},
+				"then_run": {
+					"type": "minecraft:block",
+					"result_state": {
+						"Name": "minecraft:stone"
+					}
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"nauthack:pinery/volcano"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:not",
+						"invert": {
+							"type": "minecraft:vertical_gradient",
+							"random_name": "nauthack:volcano",
+							"true_at_and_below": {
+								"absolute": 128
+							},
+							"false_at_and_above": {
+								"absolute": 192
+							}
+						}
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:surface",
+									"min_threshold": -0.1,
+									"max_threshold": 0.1
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "minecraft:obsidian"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:surface",
+									"min_threshold": -0.8,
+									"max_threshold": -0.2
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "minecraft:coal_block"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:surface",
+									"min_threshold": 0.8,
+									"max_threshold": 1
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "minecraft:tuff"
+									}
+								}
+							},
+							{
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "minecraft:blackstone"
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:vertical_gradient",
+					"random_name": "nauthack:deepslate",
+					"true_at_and_below": {
+						"absolute": -128
+					},
+					"false_at_and_above": {
+						"absolute": 0
+					}
+				},
+				"then_run": {
+					"type": "minecraft:block",
+					"result_state": {
+						"Name": "minecraft:deepslate",
+						"Properties": {
+							"axis": "y"
+						}
+					}
+				}
+			},
+			{
+				"type": "minecraft:block",
+				"result_state": {
+					"Name": "minecraft:stone"
+				}
+			}
+		]
+	},
+	"structures": {
+		"structures": {}
+	}
+}

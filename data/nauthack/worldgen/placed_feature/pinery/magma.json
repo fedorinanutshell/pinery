@@ -1,0 +1,76 @@
+{
+	"feature": "nauthack:pinery/magma",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 16,
+					"max_inclusive": 256
+				}
+			}
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 1,
+					"max_inclusive": 16
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 0,
+					"max_inclusive": 15
+				}
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:all_of",
+				"predicates": [
+					{
+						"type": "minecraft:matching_fluids",
+						"offset": [
+							0,
+							0,
+							0
+						],
+						"fluids": [
+							"minecraft:lava"
+						]
+					},
+					{
+						"type": "minecraft:matching_fluids",
+						"offset": [
+							0,
+							1,
+							0
+						],
+						"fluids": [
+							"minecraft:water"
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

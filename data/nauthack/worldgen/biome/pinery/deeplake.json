@@ -1,0 +1,59 @@
+{
+	"temperature": 0.3,
+	"downfall": 0.9,
+	"precipitation": "rain",
+	"category": "none",
+	"effects": {
+		"sky_color": 8103167,
+		"fog_color": 12638463,
+		"water_color": 4020182,
+		"water_fog_color": 329011,
+		"grass_color": 32575,
+		"foliage_color": 41055,
+		"mood_sound": {
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000,
+			"block_search_extent": 8,
+			"offset": 2
+		},
+		"music": {
+			"sound": "minecraft:music_disc.otherside",
+			"min_delay": 0,
+			"max_delay": 0,
+			"replace_current_music": true
+		}
+	},
+	"spawners": {},
+	"spawn_costs": {},
+	"carvers": {},
+	"features": [
+		[],
+		[
+			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_surface"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
+		[],
+		[],
+		[],
+		[],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava",
+			"nauthack:pinery/magma"
+		],
+		[
+			"minecraft:patch_sugar_cane",
+			"nauthack:pinery/patch"
+		],
+		[
+			"minecraft:freeze_top_layer"
+		]
+	]
+}

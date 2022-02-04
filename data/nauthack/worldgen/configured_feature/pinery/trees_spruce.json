@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:random_selector",
+	"config": {
+		"features": [
+			{
+				"chance": 0.2,
+				"feature": "nauthack:pinery/forkpine"
+			},
+			{
+				"chance": 0.4,
+				"feature": "nauthack:pinery/spruce_low"
+			},
+			{
+				"chance": 0.7,
+				"feature": "nauthack:pinery/spruce_mid"
+			},
+			{
+				"chance": 0.3,
+				"feature": "nauthack:pinery/spruce_high"
+			},
+			{
+				"chance": 0.2,
+				"feature": "nauthack:pinery/pine_low"
+			},
+			{
+				"chance": 0.2,
+				"feature": "nauthack:pinery/pine_mid"
+			},
+			{
+				"chance": 0.2,
+				"feature": "nauthack:pinery/pine_high"
+			}
+		],
+		"default": "nauthack:pinery/megaspruce_high"
+	}
+}

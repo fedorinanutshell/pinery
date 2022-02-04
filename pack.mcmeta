@@ -1,0 +1,10 @@
+{
+	"pack": {
+		"pack_format": 8,
+		"description": {
+			"text": "Pinery Data-Pack",
+			"color": "white",
+			"bold": true
+		}
+	}
+}
