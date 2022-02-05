@@ -2,7 +2,7 @@
 	"type": "nauthack:pinery",
 	"generator": {
 		"type": "minecraft:noise",
-		"seed": -980518247,
+		"seed": 0,
 		"settings": "nauthack:pinery",
 		"biome_source": {
 			"type": "minecraft:multi_noise",
